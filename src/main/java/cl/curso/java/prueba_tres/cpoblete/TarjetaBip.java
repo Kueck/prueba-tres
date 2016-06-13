@@ -1,6 +1,7 @@
 package cl.curso.java.prueba_tres.cpoblete;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
@@ -113,6 +114,8 @@ public class TarjetaBip {
 	}
 	
 	public void imprimir(){
+		
+		Collections.sort(this.getViajes());
 		
 		for (Viaje viaje : this.getViajes()) {
 			System.out.println(viaje);
